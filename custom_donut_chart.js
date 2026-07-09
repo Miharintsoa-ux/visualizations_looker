@@ -58,7 +58,7 @@ looker.plugins.visualizations.add({
       },
 
       tooltip: {
-        valueSuffix: '%'
+        valueSuffix: ''
       },
 
 series: [
