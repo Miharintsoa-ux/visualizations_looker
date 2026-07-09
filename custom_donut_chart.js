@@ -60,8 +60,7 @@ looker.plugins.visualizations.add({
       tooltip: {
         valueSuffix: '%'
       },
-
-      series: [
+series: [
         {
           name: measureLabel,
           borderRadius: 8,     // Vos coins arrondis
@@ -69,22 +68,27 @@ looker.plugins.visualizations.add({
           innerSize: '70%',    // Effet Donut
           dataLabels: [
             {
-              format: '{point.name}'
+              // ÉTIQUETTES EXTÉRIEURES (Noms des pays)
+              enabled: true,
+              format: '{point.name}',
+              distance: 15
             },
             {
+              // ÉTIQUETTES INTÉRIEURES (Pourcentages)
+              enabled: true,
               format: '{point.percentage:.0f}%',
-              distance: '-15%', // Label à l'intérieur
-              backgroundColor: 'contrast',
+              distance: '-25%', // Un peu plus au centre de la part
               style: {
-                textOutline: 'none'
+                fontSize: '12px',
+                fontWeight: 'bold',
+                color: '#FFFFFF', // Écrit en blanc brillant
+                textOutline: '1px solid rgba(0,0,0,0.4)' // Ombre légère pour lisibilité sans rectangle noir
               }
             }
           ],
           data: highchartsData // Vos données dynamiques Looker infusées ici
         }
       ]
-    });
-
     // 6. Toujours signaler à Looker que le rendu est terminé
     done();
   }
