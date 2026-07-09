@@ -60,7 +60,8 @@ looker.plugins.visualizations.add({
       tooltip: {
         valueSuffix: '%'
       },
-      series: [
+
+series: [
         {
           name: measureLabel,
           borderRadius: 8,     // Vos coins arrondis
@@ -89,6 +90,8 @@ looker.plugins.visualizations.add({
           data: highchartsData // Vos données dynamiques Looker infusées ici
         }
       ]
+    });
+
     // 6. Toujours signaler à Looker que le rendu est terminé
     done();
   }
