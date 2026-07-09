@@ -1,8 +1,8 @@
 looker.plugins.visualizations.add({
   // 1. Charger Highcharts ET le module spécifique Variable Pie
   dependencies: [
-    "https://code.highcharts.com/highcharts.js",
-    "https://code.highcharts.com/modules/variable-pie.js"
+   "https://cdnjs.cloudflare.com/ajax/libs/highcharts/11.4.1/highcharts.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/highcharts/11.4.1/modules/variable-pie.min.js"
   ],
 
   // 2. Initialiser le conteneur HTML
