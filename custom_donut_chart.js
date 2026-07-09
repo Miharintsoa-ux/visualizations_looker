@@ -1,7 +1,7 @@
 looker.plugins.visualizations.add({
   // 1. Charger la dépendance Highcharts via CDN
   dependencies: [
-    "https://code.highcharts.com/highcharts.js"
+   "https://cdnjs.cloudflare.com/ajax/libs/highcharts/11.4.1/highcharts.js"
   ],
 
   // 2. Initialiser le conteneur HTML
