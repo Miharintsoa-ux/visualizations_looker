@@ -60,7 +60,7 @@ looker.plugins.visualizations.add({
       tooltip: {
         valueSuffix: '%'
       },
-series: [
+      series: [
         {
           name: measureLabel,
           borderRadius: 8,     // Vos coins arrondis
